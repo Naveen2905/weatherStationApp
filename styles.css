@@ -1,0 +1,403 @@
+html {
+    line-height: 1.15;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%
+}
+
+body {
+    margin: 0
+}
+
+article, aside, footer, header, nav, section {
+    display: block
+}
+
+h1 {
+    font-size: 2em;
+    margin: .67em 0
+}
+
+figcaption, figure, main {
+    display: block
+}
+
+figure {
+    margin: 1em 40px
+}
+
+hr {
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible
+}
+
+pre {
+    font-family: monospace, monospace;
+    font-size: 1em
+}
+
+a {
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects
+}
+
+abbr[title] {
+    border-bottom: none;
+    text-decoration: underline;
+    text-decoration: underline dotted
+}
+
+b, strong {
+    font-weight: inherit
+}
+
+b, strong {
+    font-weight: bolder
+}
+
+code, kbd, samp {
+    font-family: monospace, monospace;
+    font-size: 1em
+}
+
+dfn {
+    font-style: italic
+}
+
+mark {
+    background-color: #ff0;
+    color: #000
+}
+
+small {
+    font-size: 80%
+}
+
+sub, sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline
+}
+
+sub {
+    bottom: -.25em
+}
+
+sup {
+    top: -.5em
+}
+
+audio, video {
+    display: inline-block
+}
+
+audio:not([controls]) {
+    display: none;
+    height: 0
+}
+
+img {
+    border-style: none
+}
+
+svg:not(:root) {
+    overflow: hidden
+}
+
+button, input, optgroup, select, textarea {
+    font-family: sans-serif;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0
+}
+
+button, input {
+    overflow: visible
+}
+
+button, select {
+    text-transform: none
+}
+
+button, html [type=button], [type=reset], [type=submit] {
+    -webkit-appearance: button
+}
+
+button::-moz-focus-inner, [type=button]::-moz-focus-inner, [type=reset]::-moz-focus-inner, [type=submit]::-moz-focus-inner {
+    border-style: none;
+    padding: 0
+}
+
+button:-moz-focusring, [type=button]:-moz-focusring, [type=reset]:-moz-focusring, [type=submit]:-moz-focusring {
+    outline: 1px dotted ButtonText
+}
+
+fieldset {
+    padding: .35em .75em .625em
+}
+
+legend {
+    box-sizing: border-box;
+    color: inherit;
+    display: table;
+    max-width: 100%;
+    padding: 0;
+    white-space: normal
+}
+
+progress {
+    display: inline-block;
+    vertical-align: baseline
+}
+
+textarea {
+    overflow: auto
+}
+
+[type=checkbox], [type=radio] {
+    box-sizing: border-box;
+    padding: 0
+}
+
+[type=number]::-webkit-inner-spin-button, [type=number]::-webkit-outer-spin-button {
+    height: auto
+}
+
+[type=search] {
+    -webkit-appearance: textfield;
+    outline-offset: -2px
+}
+
+[type=search]::-webkit-search-cancel-button, [type=search]::-webkit-search-decoration {
+    -webkit-appearance: none
+}
+
+::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    font: inherit
+}
+
+details, menu {
+    display: block
+}
+
+summary {
+    display: list-item
+}
+
+canvas {
+    display: inline-block
+}
+
+template {
+    display: none
+}
+
+[hidden] {
+    display: none
+}
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: '';
+    clear: both;
+    height: 0;
+}
+
+html {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+/* Wrapper  */
+
+.wrapper {
+    max-width: 1140px;
+    width: 85%;
+    margin: 0 auto;
+}
+
+/* Stripping  */
+
+body, h1 {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+/* Header Styling */
+
+header h1 {
+    text-align: center;
+    color: black;
+    text-transform: capitalize;
+    font-family: 'Dancing Script', cursive;
+    font-size: calc(3rem + 0.5vw);
+}
+
+/* Body Styling */
+
+body {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+video#bgVideo {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -10;
+}
+
+.day {
+    background: url(./day.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.night {
+    background: url(./night.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+    padding: 0;
+}
+
+.search li {
+    list-style-type: none;
+    font-size: calc(1.5rem + 0.5vw);
+    font-family: 'Acme', sans-serif;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.search li input {
+    display: inline-block;
+    width: 200px;
+    height: auto;
+    border: 1px dotted black;
+    background: transparent;
+    transition: all 0.3s ease-in;
+}
+
+.search li input:focus {
+    border: 2px solid coral;
+}
+
+.enterData {
+    background: transparent;
+    border: none;
+    padding: 2px;
+}
+
+.localTime {
+    text-align: center;
+    font-family: 'Aldrich', sans-serif;
+    font-size: calc(2rem + 0.5vw);
+    margin-bottom: 0;
+}
+
+.localTime p {
+    margin: 0;
+}
+
+.weatherInfo p {
+    text-align: center;
+    font-family: 'Play', sans-serif;
+    font-size: calc(2rem + 0.5vw);
+    margin: 0;
+}
+
+button .fas {
+    font-size: calc(2rem + 0.5vw);
+    padding: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+button .fas:hover, button .fas:focus {
+    color: tomato;
+}
+
+.weatherCard {
+    margin: 50px auto;
+}
+
+.result ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0;
+    box-shadow: 0 3px 6px 6px #3C5F9B;
+}
+
+.result ul li {
+    margin: 2%;
+    width: calc((100%/2) - 4%);
+    text-align: center;
+}
+
+.result ul li .fas {
+    font-size: calc(2rem + 0.5vw);
+}
+
+.result ul li p {
+    font-family: 'Play', sans-serif;
+    font-size: calc(2rem + 0.5vw);
+}
+
+.city {
+    color: chocolate;
+}
+
+.temperature {
+    color: #0e2e6c;
+}
+
+.humidity {
+    color: #39abb0;
+}
+
+.feelsLike  {
+    color: coral;
+}

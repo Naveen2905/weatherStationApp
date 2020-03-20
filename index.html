@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Acme|Aldrich|Play:400,700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c9df64d7f4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./styles.css">
+    <title>Project Two</title>
+</head>
+
+<body class="">
+    <video id="bgVideo" autoplay loop>
+        <source src="./bg.mp4" type="video/mp4">
+    </video>
+
+    <header>
+        <h1 class="wrapper">
+            weather station app
+        </h1>
+        <p>Changes for naveen github</p>
+    </header>
+
+    <main class="wrapper">
+
+        <form class="search">
+            <li>
+                
+                <label>City Name :</label><input id="cityName" type="text">
+                <button type="submit" class="enterData"><i class="fas fa-search-location"></i></button>
+            </li>
+        </form>
+
+        <div class="localTime">
+            <p class="date"></p>
+            <p class="time"></p>
+        </div>
+
+        <div class="weatherInfo">
+            <p></p>
+        </div>
+
+        <section class="weatherCard">
+            <nav class="result">
+                <ul>
+                    <li class="city"><i class="fas fa-map-marker-alt"> City</i>
+                        <p class="cityResult"></p>
+                    </li>
+                    <li class="temperature"><i class="fas fa-temperature-low"> Temperature</i>
+                        <p class="temperatureResult"></p>
+                    </li>
+                    <li class="humidity"><i class="fas fa-tint"> Humidity</i>
+                        <p class="humidityResult"></p>
+                    </li>
+                    <li class="feelsLike"><i class="fas fa-child"> Feels Like</i>
+                        <p class="feelsLikeResult"></p>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+
+    </main>
+
+    <script src="./moment.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
