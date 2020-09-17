@@ -7,7 +7,7 @@ app.getcity = function (city) {
     $.ajax({
         url: `http://api.weatherstack.com/current?access_key=70bd66af19453c9bba14abb4f37df79f&query=${city}`,
         method: 'GET',
-        dataType: 'jsonp'
+        dataType: 'json'
     }).then(function (result) {
         console.log(result);
         //Local Date & Time
