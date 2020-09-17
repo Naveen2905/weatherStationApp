@@ -7,20 +7,21 @@ app.getcity = function (city) {
     $.ajax({
         url: `http://api.weatherstack.com/current?access_key=70bd66af19453c9bba14abb4f37df79f&query=${city}`,
         method: 'GET',
-        dataType: 'json'
+        dataType: 'jsonp'
     }).then(function (result) {
         console.log(result);
         //Local Date & Time
         const dateTime = moment(result.location.localtime);
         //Formatting date
         const formatDate = dateTime.format('MMM Do YYYY');
-        $('.date').html(formatDate);
+        $('.localTime .date').html(formatDate);
         //Formatting Time
         const formatTime = dateTime.format('hh:mm A')
         $('.time').html(formatTime);
 
+        const test = result.current.weather_descriptions[0]
         //Weather Description
-        $('.weatherInfo p').html(`${result.current.weather_descriptions}`);
+        $('.weatherInfo p').html(`${result.current.weather_descriptions[0]}`);
         //Location Info
         $('.cityResult').html(`${result.location.name}, ${result.location.region}, ${result.location.country}`);
         //Local Temp.
@@ -57,12 +58,10 @@ app.getcity = function (city) {
 }
 
 app.init = function () {
-    console.log('App running...');
 
     $('.search').on('submit', function (event) {
         event.preventDefault();
         const city = $('#cityName').val();
-        // console.log(city);
         app.getcity(city);
     })
 }
